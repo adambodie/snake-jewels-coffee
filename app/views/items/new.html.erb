@@ -1,7 +1,7 @@
 <h1>Adam's Snakes, Jewels and Coffee Shop</h1>
 <h3>Add new item</h3>
 
-<%= form_for :item do |f| %>
+<%= form_for :item , url: items_path do |f| %>
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
