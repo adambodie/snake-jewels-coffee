@@ -1,19 +1,22 @@
 <h1>Listing items</h1>
 <%= link_to 'New item', new_item_path %> 
+ 
 <table>
   <tr>
     <th>Title</th>
-    <th>Description</th>
     <th>Size</th>
+    <th>Description</th>
     <th>Price</th>
   </tr>
  
-  <%= @items.each do |item| %>
+  <% @items.each do |item| %>
     <tr>
       <td><%= item.title %></td>
-      <td><%= item.description %></td>
       <td><%= item.size %></td>
-      <td><%= item.price%></td>
+      <td><%= item.description %></td>
+      <td><%= item.price %></td>
+      <td><%= link_to 'Show', item_path(item) %></td>
+      <td><%= link_to 'Edit', edit_item_path(item) %></td>
     </tr>
   <% end %>
 </table>
