@@ -1,4 +1,7 @@
 class ItemsController < ApplicationController
+  
+  http_basic_authenticate_with name: "aduo3000", password: "ZMxnCb$0", except: [:index, :show]
+  
   def new 
     @item = Item.new   
   end
@@ -33,6 +36,13 @@ class ItemsController < ApplicationController
     else
       render 'edit'
     end
+end
+
+def destroy
+  @item = Item.find(params[:id])
+  @item.destroy
+ 
+  redirect_to items_path
 end
 
   
