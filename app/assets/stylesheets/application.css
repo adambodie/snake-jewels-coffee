@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+#title {
+	margin-left: 200px;
+	margin-top: -2px;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 60px;
+	color: yellow;
+	font-weight: bold;
+	position: absolute;
+}
+#building {
+	margin-left: 200px;
+	margin-top: 120px;
+	display: inline-block;
+}
+#intro {
+	font-family: Georgia;
+	font-size: 18px;
+	display: inline-block;
+	margin-left: 30px;
+}
+#location {
+	font-family: Georgia;
+	font-size: 24px;
+	text-align: center;
+	margin-right: 600px;
+	margin-top: 20px;
+}
