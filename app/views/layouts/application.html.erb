@@ -7,10 +7,17 @@
   <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
-  <div id="title"><%=image_tag("title.gif")%></div>
+  <div id="title"><%=image_tag("title.gif")%><%=image_tag("logo_thumbnail.gif")%></div>
 </head>
 <body style="background-image:url(/images/background2.jpg)">
-
+<table id = "menu">
+	<tr>
+		<td><%=link_to 'About', controller: 'about' %></td>
+		<td><a href="http://localhost:3000/">Home</a></td>
+		<td><%= link_to 'Items', controller: 'items' %></td>
+		<td><a href="mailto:aduo3000@yahoo.com">Contact Us</a></td>
+	</tr>
+</table>
 <%= yield %>
 
 </body>
