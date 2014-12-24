@@ -1,14 +1,11 @@
+<div class="image_item"><%=image_tag("test.jpg")%></div>
+
 <div class="items_individual">
-<p>
-  <strong>Item:</strong>
-  <%= @item.title %>
+
+<p style = "font-size:24px">
+  <strong><%= @item.title %></strong>
 </p>
  
-<p>
-  <strong>Description:</strong>
-  <%= @item.description %>
-</p>
-
 <p>
   <strong>Size:</strong>
   <%= @item.size %>
@@ -18,5 +15,10 @@
   <strong>Price:</strong>
   <%= @item.price %>
 </p>
+
+<p>
+  <%= @item.description %>
+</p>
+
 </div>
-<%= link_to 'Back', items_path %> | <%= link_to 'Edit', edit_item_path(@item) %>
+<div id="back"><%= link_to 'Back', items_path %></div>

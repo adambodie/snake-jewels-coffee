@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+#back {
+	margin-left: 200px;
+}
 .form {
 	margin-left: 200px;
 }
@@ -28,8 +31,14 @@
 .all_items {
 	margin-left: 200px;
 }
-.items_individual {
+.image_item {
 	margin-left: 200px;
+	margin-top: 50px;
+}
+.items_individual {
+	margin-left: 400px;
+	margin-top: -50px;
+	white-space: nowrap;
 }
 #title {
 	margin-left: 200px;
@@ -66,7 +75,7 @@
 	font-family: Georgia;
 	font-size: 24px;
 	text-align: center;
-	margin-left: 260px;
+	margin-left: 300px;
 	margin-top: 50px;
 	white-space: nowrap;
 	position: absolute;
@@ -75,10 +84,13 @@
 	font-family: Georgia;
 	font-size: 24px;
 	text-align: center;
-	margin-left: 200px;
+	margin-left: 250px;
 	margin-top: 200px;
 	white-space: nowrap;
 	position: absolute;
+}
+#subtext {
+	font-size: 18px;
 }
 h3 {
 	margin-left: 200px;

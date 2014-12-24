@@ -1,19 +1,11 @@
-<h3>Listing items</h3>
 <%= link_to 'New item', new_item_path %> 
 <div class="all_items"> 
 <table>
-  <tr>
-    <th>Title</th>
-    <th>Size</th>
-    <th>Description</th>
-    <th>Price</th>
-  </tr>
- 
+
   <% @items.each do |item| %>
     <tr>
+      <td><%= image_tag("test.jpg")%></td>	
       <td><%= item.title %></td>
-      <td><%= item.size %></td>
-      <td><%= item.description %></td>
       <td><%= item.price %></td>
       <td><%= link_to 'Show', item_path(item) %></td>
       <td><%= link_to 'Edit', edit_item_path(item) %></td>
