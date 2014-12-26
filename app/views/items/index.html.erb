@@ -4,7 +4,7 @@
 
   <% @items.each do |item| %>
     <tr>
-      <td><%= image_tag("test.jpg")%></td>	
+      <td><%= item.picture.url %></td>	
       <td><%= item.title %></td>
       <td><%= item.price %></td>
       <td><%= link_to 'Show', item_path(item) %></td>
