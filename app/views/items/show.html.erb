@@ -1,9 +1,6 @@
 <div class="image_item">
-	<p>
-		<%=@item.picture.url%>
-	</p>	
-		
-	</div>
+	<p><%=image_tag @item.picture.url(:medium)%></p>	
+</div>
 
 <div class="items_individual">
 
