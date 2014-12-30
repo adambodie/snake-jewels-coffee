@@ -1,0 +1,33 @@
+#intro {
+	font-family: Georgia;
+	font-size: 18px;
+	margin-left: 630px;
+	margin-top: -200px;
+	white-space: nowrap;
+}
+
+#building {
+	margin-left: 250px;
+	margin-top: 20px;
+}
+#location {
+	font-family: Georgia;
+	font-size: 24px;
+	text-align: center;
+	margin-left: 300px;
+	margin-top: 50px;
+	white-space: nowrap;
+	position: absolute;
+}
+#hours {
+	font-family: Georgia;
+	font-size: 24px;
+	text-align: center;
+	margin-left: 250px;
+	margin-top: 200px;
+	white-space: nowrap;
+	position: absolute;
+}
+#subtext {
+	font-size: 18px;
+}

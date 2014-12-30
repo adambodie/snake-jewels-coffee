@@ -15,20 +15,9 @@
  */
 #back {
 	margin-left: 200px;
+	margin-top: 200px;
 }
 .form {
-	margin-left: 200px;
-}
-.about_us {
-	margin-left: 200px;
-}
-#ad_title {
-	font-size: 20px;
-	color: black;
-	font-weight:bold;
-	text-decoration:none;
-}
-.all_items {
 	margin-left: 200px;
 }
 .image_item {
@@ -36,17 +25,13 @@
 	margin-top: 50px;
 }
 .items_individual {
-	margin-left: 400px;
-	margin-top: -50px;
+	margin-left: 550px;
+	margin-top: -300px;
 	white-space: nowrap;
 }
 #title {
 	margin-left: 200px;
 	margin-top: -2px;
-}
-#advertisement_horizontal {
-	margin-left: 300px;
-	margin-top: 10px;
 }
 #menu {
 	margin-left: 177px;
@@ -60,59 +45,16 @@
 	background-image: url(/images/background-archive.jpg);
 	white-space: nowrap;
 }
-#building {
-	margin-left: 250px;
-	margin-top: 20px;
-}
-#intro {
-	font-family: Georgia;
-	font-size: 18px;
-	margin-left: 630px;
-	margin-top: -200px;
-	white-space: nowrap;
-}
-#location {
-	font-family: Georgia;
-	font-size: 24px;
-	text-align: center;
-	margin-left: 300px;
-	margin-top: 50px;
-	white-space: nowrap;
-	position: absolute;
-}
-#hours {
-	font-family: Georgia;
-	font-size: 24px;
-	text-align: center;
-	margin-left: 250px;
-	margin-top: 200px;
-	white-space: nowrap;
-	position: absolute;
-}
-#subtext {
-	font-size: 18px;
-}
 h3 {
 	margin-left: 200px;
-}
-#about_paragraph_2 {
-	margin-left: 350px;
-}
-#owner {
-	margin-top: -300px;
-}
-#owner_child {
-	margin-left: 500px;
-	margin-top: -200px;
-}
-
-.about_us {
-	white-space: nowrap;
-	font-family: Georgia;
 }
 
 #logo_main {
 	margin-left: 700px;
 	margin-top: 100px;
+}
+
+.all_items {
+	margin-left: 200px;
 }
 

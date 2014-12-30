@@ -1,0 +1,15 @@
+#owner {
+	margin-top: -300px;
+}
+#owner_child {
+	margin-left: 500px;
+	margin-top: -200px;
+}
+#about_paragraph_2 {
+	margin-left: 350px;
+}
+.about_us {
+	margin-left: 200px;
+	white-space: nowrap;
+	font-family: Georgia;
+}
