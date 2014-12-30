@@ -41,3 +41,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'paperclip'
 gem 'activesupport'
 gem 'actionpack'
+gem 'devise', '~> 3.4.1'

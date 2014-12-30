@@ -6,13 +6,16 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <div id="title"><%=image_tag("title.gif")%><%=image_tag("logo_thumbnail.gif")%></div>
+
 </head>
 <body style="background-image:url(/images/background2.jpg)">
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 <table id = "menu">
 	<tr>
-		<td><%=link_to 'About', controller: 'about' %></td>
+		<td><a href="http://localhost:3000/about">About</a></td>
 		<td><a href="http://localhost:3000/">Home</a></td>
-		<td><%= link_to 'Items', controller: 'items' %></td>
+		<td><a href="http://localhost:3000/items">Items</a></td>
 		<td><a href="mailto:aduo3000@yahoo.com?subject=Contact Us">Contact Us</a></td>
 	</tr>
 </table>
