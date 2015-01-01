@@ -10,4 +10,10 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_up) << :username
   end
   
+  before_filter :set_global_search_variable
+
+  def set_global_search_variable
+    @q = Item.search(params[:q])
+  end
+  
 end

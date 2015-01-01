@@ -3,7 +3,14 @@ Rails.application.routes.draw do
   get 'welcome/index'
   
   resources :about
-  resources :items
+  resources :search
+  
+  resources :items do
+    collection do
+      match 'search' => 'items#search', via: [:get, :post], as: :search
+    end
+  end
+  
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -22,7 +22,14 @@ class ItemsController < ApplicationController
   
   def index
     @items = Item.all
+    @q = Item.search(params[:q])
+    @items_search = @q.result(distinct: true)
   end 
+  
+  def search
+    index
+    render :index
+  end
   
   def edit
     @item = Item.find(params[:id])
