@@ -1,5 +1,5 @@
 <div id="search_form">
-<%= search_form_for @q do |f| %>
+<%= search_form_for @q, url: search_items_path, html: { method: :post } do |f| %>
   <%= f.label :title_cont, "Search" %><br />
   <%= f.search_field :title_cont %>
 

@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   get 'welcome/index'
-  
   resources :about
   resources :search
-  
   resources :items do
     collection do
       match 'search' => 'items#search', via: [:get, :post], as: :search
