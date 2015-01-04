@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   
-  http_basic_authenticate_with name: "aduo3000", password: "ZMxnCb$0", except: [:index, :show]
+  http_basic_authenticate_with name: "aduo3000", password: "ZMxnCb$0", except: [:index, :show, :search]
   
   def new 
     @item = Item.new   
@@ -21,9 +21,8 @@ class ItemsController < ApplicationController
   end
   
   def index
-    @items = Item.all
     @q = Item.search(params[:q])
-    @items_search = @q.result(distinct: true)
+    @items = @q.result(distinct: true)
   end 
   
   def search

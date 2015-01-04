@@ -1,7 +1,7 @@
 <%= link_to 'New item', new_item_path %> 
 <div class="all_items"> 
 <table>
-  <% @items.each do |item| %>
+  <% @items.each do |item| %>  		
     <tr>
       <td><%= image_tag item.picture.url(:thumb) %></td>	
       <td><%= item.title %></td>
