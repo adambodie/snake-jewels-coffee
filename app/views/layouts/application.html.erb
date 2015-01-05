@@ -6,39 +6,6 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-  <script>
-  $(function() {
-    $( document ).tooltip({
-      position: {
-        my: "center bottom-20",
-        at: "center top",
-        using: function( position, feedback ) {
-          $( this ).css( position );
-          $( "<div>" )
-            .addClass( "arrow" )
-            .addClass( feedback.vertical )
-            .addClass( feedback.horizontal )
-            .appendTo( this );
-        }
-      }
-    });
-  });
-  </script>
-  <style>
-  .ui-tooltip {
-    padding: 5px 10px;
-    color: black;
-    background-color: white;
-    font: bold 12px Georgia, Sans-Serif;
-    border: 2px solid black;
-    width: 300px;
-    border-radius: 5px;
-    text-align: center;
-  }
-  </style>
-  
-
-    
   <div id="title"><%=image_tag("title2.gif")%><%=image_tag("logo_thumbnail.gif")%></div>
 
 </head>
@@ -46,13 +13,14 @@
 
 <table id = "menu">
 	<tr>
-		<td><a href="http://localhost:3000/" title="Click here to go to the Home page">Home</a></td>
-		<td><a href="http://localhost:3000/about" title="Click here to read more about our business">About</a></td>
-		<td><a href="http://localhost:3000/items" title="Click here to look through all of our Items">Items</a></td>
-		<td><a href="http://localhost:3000/users/sign_in" title="Click here to Sign in to your account">Sign In</a></td>
-		<td><a href="http://localhost:3000/search" title="Click here to search for a particular item">Search</a></td>
+		<td><a href="http://localhost:3000/">Home</a></td>
+		<td><a href="http://localhost:3000/about">About</a></td>
+		<td><a href="http://localhost:3000/items">Items</a></td>
+		<td><a href="http://localhost:3000/users/sign_in">Sign In</a></td>
+		<td><a href="http://localhost:3000/search">Search</a></td>
 	</tr>
 </table>
+
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 <%= yield %>
