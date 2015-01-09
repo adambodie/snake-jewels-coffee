@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+body {
+	background-image:url(/images/background.jpg);
+}
 #back {
 	margin-left: 200px;
 	margin-top: 200px;
@@ -34,12 +37,11 @@
 	white-space: nowrap;
 }
 #title {
-	margin-left: 100px;
-	margin-top: -2px;
+	margin-top: -8px;	
 }
 #menu {
 	margin-left: 177px;
-	margin-top: 19px;
+	margin-top: -6px;
 }
 #menu td {
 	font-family: Georgia;
@@ -62,3 +64,7 @@ h3 {
 	margin-left: 200px;
 }
 
+.all_items td {
+	font-size: 18px;
+	padding: 20px;
+}
