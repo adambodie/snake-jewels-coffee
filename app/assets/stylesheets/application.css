@@ -73,6 +73,12 @@ h3 {
 	margin-left: 200px;
 }
 
+.all_items a {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
 .all_items td {
 	font-size: 18px;
 	padding: 20px;
