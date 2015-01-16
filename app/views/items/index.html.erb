@@ -1,11 +1,11 @@
 <div id="advertisement_horizontal"><a href="www.thisisonlypretend.com/haerhkrdsafdh/46953346/shflesdafdslfhgkd.html"><%=image_tag("#{@horizontal_name}.jpg")%></a></div>
 <div class="all_items"> 
-<table>
+<table border="0" cellspacing="0">
+            
   <% @items.each do |item| %>  		
     <tr>
       <td><%= image_tag item.picture.url(:thumb) %></td>	
-      <td><%= link_to item.title, item_path(item) %></td>
-      <td>$<%= item.price %></td>
+      <td><%= link_to item.title, item_path(item) %></br>$<%=item.price%></td>
       <td><%= link_to 'Edit', edit_item_path(item) %></td>
       <td><%= link_to 'Delete', item_path(item), method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
