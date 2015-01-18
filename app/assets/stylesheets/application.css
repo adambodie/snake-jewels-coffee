@@ -31,11 +31,12 @@ body {
 .image_item {
 	margin-left: 200px;
 	margin-top: 50px;
+	width: 300px;
 }
 .items_individual {
 	margin-left: 550px;
-	margin-top: -300px;
-	white-space: nowrap;
+	margin-top: -200px;
+	width: 500px;
 }
 #title {
 	margin-top: -8px;	

@@ -5,11 +5,17 @@
 	margin-left: 500px;
 	margin-top: -200px;
 }
+#about_paragraph_1 {
+	width: 490px;
+}
 #about_paragraph_2 {
 	margin-left: 350px;
+	width: 600px;
+}
+#about_paragraph_3 {
+	width: 950px;
 }
 .about_us {
 	margin-left: 200px;
-	white-space: nowrap;
 	font-family: Georgia;
 }
