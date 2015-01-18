@@ -1,3 +1,4 @@
+
 <div class="image_item">
 	<p><%=image_tag @item.picture.url(:medium)%></p>	
 </div>
@@ -24,3 +25,35 @@
 
 </div>
 <div id="back"><%= link_to 'Back', items_path %></div>
+
+<script type='text/javascript'>
+    var random_generator;
+    var random_generator2;
+    var random_generator3;
+    var arr=[1,4,7,10,13,16,19,22];
+    var arr2=["Ruby", "alexandrite", "emerald", "pyrite", "opal", "aquamarine", "diamond", "jade"]
+    var arr3=[1420137571, 1420388601, 1420389585, 1420742122, 1420762324, 1420935182, 1420935661, 1420936416]
+    var arr4= ["001", "004", "007", "010", "013", "016", "019", "022"]
+    var randomnumber=Math.floor(Math.random()*8);
+    random_generator=arr[randomnumber];
+    random_generator2=arr2[randomnumber];
+    random_generator3=arr3[randomnumber];
+    random_generator4=arr4[randomnumber];
+</script>
+<div class="additional_link">
+<p>You Might Like This As Well.  Click the Picture for More Information.<p></br>
+<a href="http://localhost:3000/items/Variable" id="index"><img src="/system/items/pictures/000/000/NUMBER/thumb/NAME.jpeg?ID" id="name"></a>
+
+<script>
+    var newUrl = document.getElementById('index').href;
+    newUrl = newUrl.replace("Variable", random_generator);
+    document.getElementById('index').href = newUrl;
+</script>
+<script>
+	var newName = document.getElementById('name').src;
+    newName = newName.replace("ID", random_generator3);
+    newName = newName.replace("NAME", random_generator2);
+    newName = newName.replace("NUMBER", random_generator4);
+    document.getElementById('name').src = newName;
+</script>
+</div>
