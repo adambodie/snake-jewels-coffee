@@ -1,0 +1,35 @@
+// Place all the styles related to the Menu controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$size: 18px;
+
+#coffee_menu {
+  margin-left: 250px;
+  background-image: url(/images/chalkboard.jpeg);
+  background-repeat: no-repeat;
+  width: 825px;
+  color: #F5F5F3;
+  font-size: $size;
+  padding: 30px;
+  font-family: 'Indie Flower';
+}
+#coffee_menu td {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#coffee_menu td a {
+  text-decoration: none;
+  color: #f5F5F3;
+}
+#coffee_menu th {
+  font-size: $size + 12px;
+}
+#sizes {
+  font-size: $size + 2px;
+  text-decoration: underline;
+  font-variant: small-caps;
+  font-weight: bold;
+}

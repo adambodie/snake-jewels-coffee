@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   get 'welcome/index'
   resources :about
+  resources :menu
   resources :search
   resources :items do
     collection do
