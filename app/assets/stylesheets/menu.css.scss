@@ -3,13 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $size: 18px;
-
+$white: #F5F5F3;
 #coffee_menu {
   margin-left: 250px;
   background-image: url(/images/chalkboard.jpeg);
   background-repeat: no-repeat;
   width: 825px;
-  color: #F5F5F3;
+  color: $white;
   font-size: $size;
   padding: 30px;
   font-family: 'Indie Flower';
@@ -22,10 +22,10 @@ $size: 18px;
 }
 #coffee_menu td a {
   text-decoration: none;
-  color: #f5F5F3;
+  color: $white;
 }
 #coffee_menu th {
-  font-size: $size + 12px;
+  font-size: $size + 6px;
 }
 #sizes {
   font-size: $size + 2px;

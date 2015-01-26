@@ -17,27 +17,13 @@
 body {
 	background-image:url(/images/background.jpg);
 }
+
 #back {
 	margin-left: 200px;
 	margin-top: 200px;
 }
-.form {
-	margin-left: 200px;
-}
-#search_form {
-	margin-left: 200px;
-	font-family: Georgia;
-}
-.image_item {
-	margin-left: 200px;
-	margin-top: 50px;
-	width: 300px;
-}
-.items_individual {
-	margin-left: 550px;
-	margin-top: -200px;
-	width: 500px;
-}
+
+
 #title {
 	margin-top: -8px;	
 	margin-left: -8px;
@@ -54,7 +40,6 @@ body {
 	background-image: url(/images/background-archive.jpg);
 	white-space: nowrap;
 }
-
 #menu td a {
 	text-decoration: none;
 	color: yellow;
@@ -70,31 +55,5 @@ h3 {
 	margin-top: 100px;
 }
 
-.all_items {
-	margin-left: 200px;
-}
 
-.all_items a {
-	text-decoration: none;
-	font-weight: bold;
-	color: black;
-}
-.all_items td {
-	border-bottom: 1px solid black;
-}
-
-.all_items td {
-	font-size: 18px;
-	padding: 20px;
-}
-
-.additional_link {
-	margin-left: 200px;
-}
-
-.additional_link p {
-	font: 14px;
-	font-weight: bold;
-	font-family: Georgia;
-}
 
