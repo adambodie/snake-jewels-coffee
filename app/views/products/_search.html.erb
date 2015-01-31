@@ -1,8 +1,13 @@
 <div id="search_form">
 <%= search_form_for @q, url: search_products_path, html: { method: :post } do |f| %>
 
-  <%= f.label :title_cont, "Search" %><br />
+  <%= f.label :title_cont, "Search by Name" %><br />
   <%= f.search_field :title_cont %><br /><br/ >
+  <%= f.submit %><br /><br />
+  
+  
+  <%= f.label :category_cont, "Search by Category" %><br />
+  <%= f.search_field :category_cont %><br /><br/ >
   <%= f.submit %><br /><br />
     
   <%= f.label :price_gteq, "Price in the range of" %>

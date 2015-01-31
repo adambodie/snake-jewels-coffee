@@ -19,6 +19,9 @@
     </tr>
   <% end %>
 </table>
+<div class="digg_pagination">
+	<%= will_paginate @products, :page_links => false %>
+</div>
 </div>
 <%= link_to 'New product', new_product_path %> 
 <div id="advertisement_vertical"><a href="www.thisisonlypretend.com/haerhkrdsafdh/46953346/shflesdafdslfhgkd.html"><%=image_tag("#{@vertical_name}.jpg")%></a></div></br></br>

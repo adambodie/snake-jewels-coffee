@@ -32,7 +32,7 @@ class ProductsController < ApplicationController
     @vertical_name = @vertical_ad[vertical_number]
     
    @q = Product.search(params[:q])
-   @products = @q.result(distinct: true)
+   @products = @q.result(distinct: true).paginate(:page => params[:page], :per_page => 10)
   end 
   
   def search
