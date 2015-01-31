@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   resources :about
   resources :menu
   resources :search
-  resources :items do
+  resources :products do
     collection do
-      match 'search' => 'items#search', via: [:get, :post], as: :search
+      match 'search' => 'products#search', via: [:get, :post], as: :search
     end
   end
   

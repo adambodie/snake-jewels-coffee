@@ -1,0 +1,37 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.form {
+  margin-left: 200px;
+}
+.all_products {
+  margin-left: 200px;
+}
+.all_products a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.all_products td {
+  border-bottom: 1px solid black;
+  font-size: 18px;
+  padding: 20px;
+}
+.additional_link {
+  margin-left: 200px;
+}
+.additional_link p {
+  font: 14px;
+  font-weight: bold;
+  font-family: Georgia;
+}
+.image_item {
+  margin-left: 200px;
+  margin-top: 50px;
+  width: 300px;
+}
+.products_individual {
+  margin-left: 550px;
+  margin-top: -200px;
+  width: 500px;
+}

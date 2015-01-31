@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_global_search_variable
 
   def set_global_search_variable
-    @q = Item.search(params[:q])
+    @q = Product.search(params[:q])
   end
   
 end
