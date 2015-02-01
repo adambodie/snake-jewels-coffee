@@ -30,7 +30,7 @@
 	jewels and coffee in the same shop.  After all, why go to three shops when you can go to just one?
 	</div>
 </div>
-
+<%= render "welcome/adsVertical"%>
 <div class="word_ads">
 sponsored offers</br>
 <div id="ad_title"><a href="www.thisisonlypretend.com/haerhkrdsafdh/46953346/shflesdafdslfhgkd.html">Vote for Me</a></div>
@@ -50,7 +50,7 @@ tips. I dare you to look...</br>
 Happy-Go-Lucky Gardens</br>
 </div></br>	
 
-<div id="advertisement_vertical"><a href="www.thisisonlypretend.com/haerhkrdsafdh/46953346/shflesdafdslfhgkd.html"><%=image_tag("#{@vertical_name}.jpg")%></a></div>
+
 <div id="links"><%= link_to 'Back', controller: 'welcome' %></div>
-<div id="advertisement_horizontal"><a href="www.thisisonlypretend.com/haerhkrdsafdh/46953346/shflesdafdslfhgkd.html"><%=image_tag("#{@horizontal_name}.jpg")%></a></div></br>
+<%= render "welcome/adsHorizontal"%>
 

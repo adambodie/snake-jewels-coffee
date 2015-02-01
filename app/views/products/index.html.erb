@@ -1,8 +1,8 @@
-<div id="advertisement_horizontal"><a href="www.thisisonlypretend.com/haerhkrdsafdh/46953346/shflesdafdslfhgkd.html"><%=image_tag("#{@horizontal_name}.jpg")%></a></div>
+<%= render "welcome/adsHorizontal"%>
 <div class="all_products"> 
 <table border="0" cellspacing="0">
 <tr>
-  <th><%= sort_link(@q, :reset)%></th>			
+  <th></th>			
   <th><%= sort_link(@q, :title) %></th>
   <th><%= sort_link(@q, :category) %></th>
   <th><%= sort_link(@q, :price)%></th>
@@ -24,7 +24,7 @@
 </div>
 </div>
 <%= link_to 'New product', new_product_path %> 
-<div id="advertisement_vertical"><a href="www.thisisonlypretend.com/haerhkrdsafdh/46953346/shflesdafdslfhgkd.html"><%=image_tag("#{@vertical_name}.jpg")%></a></div></br></br>
+<%= render "welcome/adsVertical"%>
 <div class="word_ads">
 sponsored offers</br>
 <div id="ad_title"><a href="www.thisisonlypretend.com/haerhkrdsafdh/46953346/shflesdafdslfhgkd.html">New Rule Here</a></div>

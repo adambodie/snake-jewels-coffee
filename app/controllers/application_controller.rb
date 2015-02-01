@@ -15,5 +15,4 @@ class ApplicationController < ActionController::Base
   def set_global_search_variable
     @q = Product.search(params[:q])
   end
-  
 end
