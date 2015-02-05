@@ -26,6 +26,10 @@ class ProductsController < ApplicationController
     @vertical_ad = ["GOP", "Money", "Starbucks", "Dog", "Beer", "Surgery"]
     vertical_number = (@vertical_ad.length * rand).to_i
     @vertical_name = @vertical_ad[vertical_number]
+    
+    @sales_tax = 7.50
+    @tax_price = (@product.price * (@sales_tax / 100)).round(2)
+    @total = (@product.price + (@product.price * (@sales_tax / 100))).round(2)
   end
   
   def index    

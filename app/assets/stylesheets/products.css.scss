@@ -33,8 +33,9 @@
 }
 .products_individual {
   margin-left: 550px;
-  margin-top: -200px;
+  margin-top: -300px;
   width: 500px;
+  font-size: 18px;
 }
 .digg_pagination {
   margin-top: 5px;
@@ -90,4 +91,7 @@
     height: 0;
     clear: both;
     visibility: hidden; 
+}
+#price_table {
+  text-align: right;
 }
