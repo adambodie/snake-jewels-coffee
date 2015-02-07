@@ -1,9 +1,20 @@
 .signin {
 	margin-left: 200px;
-	font-family: Georgia;
 }
 
 .devise_shared_links {
 	margin-left: 200px;
-	font-family: Georgia;
+}
+
+#noaccount {
+	font-weight: bold;
+	color: red;
+}
+.signup a {
+	text-decoration: none;
+	padding: 20px;
+	font-size: 16px;
+	color: black;
+	font-family: 'Sigmar One';
+	background-color: #CF824E;
 }
