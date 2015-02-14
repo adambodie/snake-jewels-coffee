@@ -28,14 +28,15 @@
 }
 .image_item {
   margin-left: 200px;
-  margin-top: 50px;
   width: 300px;
+  display: inline-block;
 }
 .products_individual {
-  margin-left: 550px;
-  margin-top: -300px;
-  width: 500px;
+  padding-left: 60px;
+  width: 450px;
   font-size: 18px;
+  display: inline-block;
+  position: absolute;
 }
 .digg_pagination {
   margin-top: 5px;
