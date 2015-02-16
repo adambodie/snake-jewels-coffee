@@ -21,6 +21,40 @@
 		<td><a href="http://localhost:3000/search">Search</a></td>
 	</tr>
 </table>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter=new google.maps.LatLng(39.9614617,-83.0010299);
+
+function initialize() {
+  var mapProp = {
+    center:myCenter,
+    zoom:10,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(15);
+  map.setCenter(marker.getPosition());
+  });
+
+var infowindow = new google.maps.InfoWindow({
+  content:"Adam's Snakes, Jewels and Coffee Shop"
+  });
+
+google.maps.event.addListener(marker, 'click', function() {
+  infowindow.open(map,marker);
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+
 </head>
 <body>
 <p class="notice"><%= notice %></p>

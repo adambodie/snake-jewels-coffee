@@ -12,10 +12,15 @@ $size: 18px;
   margin-top: -200px;
   width: 500px;
 }
-
+#googleMap {
+  display: inline-block;
+  margin-left: 600px;
+  margin-top: -600px;
+}
 #building {
   margin-left: 250px;
   margin-top: 20px;
+  display: inline-block;
 }
 #location {
   font-family: $family;
@@ -33,7 +38,7 @@ $size: 18px;
   margin-left: 250px;
   margin-top: 200px;
   white-space: nowrap;
-  position: absolute;
+  display: inline-block;
 }
 #subtext {
   font-size: $size;
