@@ -1,4 +1,5 @@
 <%= render "adsHorizontal"%>
+
 <div id="building"><%=image_tag("building.gif")%></div>
 <div id= "intro">
 Welcome to Adam's Snakes, Jewels and Coffee Shop,
@@ -9,15 +10,14 @@ get such items at three different stores when you can
 just come to one place instead? Come to Adam's Snakes,
 Jewels and Coffee Shop for all your needs. Check out the
 site for more details.
+</div>
+<p id="location"></p>
+<script>
+var address = '{"number":"27197 SW Fake Street","city":"Random City","state":"OH", "zip":43222}'
+var obj = JSON.parse(address);
+document.getElementById("location").innerHTML = "<p style='font-size: 24px; font-weight: bold'>Address</p>" + obj.number + "<br>" +obj.city + "&nbsp;" + obj.state  + "&nbsp;" + obj.zip;
+</script>
 
-</div>
-<div id="location">
-<h4>Address:</h4>
-<div id="subtext">
-27197 SW Fake Street</br>
-Random City, OH 43222</br>
-</div>
-</div>
 <div id="hours">
 <h4>Store Hours</h4>
 <div id="subtext">
