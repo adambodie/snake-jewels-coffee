@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <div id="title"><%=image_tag("header.jpg")%></div>
+<script>
+$(document).ready(function(){
+    $("#menu a").hover(function(){
+        $(this).css("color", "black");
+        },function(){
+        $(this).css("color", "yellow");
+    });
+});
+</script>   
 </head>
 <body>
 <table id="menu" cellspacing="0">
