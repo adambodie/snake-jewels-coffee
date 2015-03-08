@@ -20,13 +20,7 @@ class ProductsController < ApplicationController
     @unit = "oz" if @product.category == "Coffee"
     @unit = "feet" if @product.category == "Snakes"
     @unit = "carat" if @product.category == "Jewels"
-    @horizontal_ad = ["Boring", "Viagra", "Human", "Guns", "Diet", "Gay"]
-    horizontal_number = (@horizontal_ad.length * rand).to_i
-    @horizontal_name = @horizontal_ad[horizontal_number]
-    @vertical_ad = ["GOP", "Money", "Starbucks", "Dog", "Beer", "Surgery"]
-    vertical_number = (@vertical_ad.length * rand).to_i
-    @vertical_name = @vertical_ad[vertical_number]
-    
+   
     @sales_tax = 7.50
     @tax_price = (@product.price * (@sales_tax / 100)).round(2)
     @total = (@product.price + (@product.price * (@sales_tax / 100))).round(2)
