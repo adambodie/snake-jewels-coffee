@@ -39,8 +39,6 @@
 	</p>
 	
 	</div>
-	<div id="back"><%= link_to 'Back', products_path %></div><br /><br />
-	
 	
 	<%- if @product.category == "Jewels" %>
 	  <%= javascript_include_tag "jewels" %>  
@@ -55,7 +53,7 @@
 	<% end -%>
 	
 	<div class="additional_link">
-		<p>You Might Like This As Well.  Click the Picture for More Information.</p></br>
+		<p id="similar">Similar Products</p>
 		<a href="http://localhost:3000/products/Variable" id="index"><img src="/system/products/pictures/000/000/NUMBER/thumb/NAME.jpeg?ID" id="name"></a></br>
 		<p id= "other_name"></p>
 	</div>

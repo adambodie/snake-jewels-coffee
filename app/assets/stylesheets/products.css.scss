@@ -12,24 +12,45 @@
   font-weight: bold;
   color: black;
 }
+.all_products th {
+  font-size: 28px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
 .all_products td {
   border-bottom: 1px solid black;
-  font-size: 18px;
-  padding: 20px;
+  font-size: 21px;
+  padding: 20px 40px;
   text-align: center;
 }
 .additional_link {
   margin-left: 200px;
+  border: 1px solid black;
+  width: 950px;
+  position: absolute;
+  margin-top: 100px;
 }
 .additional_link p {
-  font: 14px;
+  font-size: 32px;
   font-weight: bold;
   font-family: Georgia;
+  padding-left: 20px;
+}
+.additional_link img {
+  padding-left: 20px;
 }
 .image_item {
   margin-left: 200px;
   width: 300px;
   display: inline-block;
+}
+#other_name {
+  font-size: 24px;
+}
+#similar {
+  font-size: 32px;
 }
 .products_individual {
   padding-left: 60px;
@@ -104,8 +125,8 @@
   color: yellow;
   font-family: 'Sigmar-One';
   border: 10px groove #CF824E;
-  border-radius: 50px;
   padding: 20px;
   background-image: url(/images/background-archive.jpg);
 
 }
+

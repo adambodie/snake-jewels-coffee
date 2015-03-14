@@ -8,8 +8,10 @@
   
   
   <%= f.label :category_cont, "By Category" %><br />
-  <%= f.search_field :category_cont, placeholder: "Search..." %><br /><br/ >
+  <%= f.select(:category_cont, options_for_select([['All'],['Snakes'], ['Jewels'],['Coffee']])) %></br/>
   <%= f.submit %><br /><br />
+  
+
   
   <strong><p>By Price</p></strong>  
   <%= f.label :price_gteq, "Minimum:" %><br />
