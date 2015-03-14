@@ -1,6 +1,7 @@
+
 <%= render "adsHorizontal"%>
-<div id ="search_tab"><%= render 'products/search' %></div>
 <div id="building"><%=image_tag("building.gif")%></div>
+
 <div id= "intro">
 Welcome to Adam's Snakes, Jewels and Coffee Shop,
 the only shop where you can buy a pet snake to call
@@ -11,6 +12,7 @@ just come to one place instead? Come to Adam's Snakes,
 Jewels and Coffee Shop for all your needs. Check out the
 site for more details.
 </div>
+<div id ="search_tab"><%= render 'products/search' %></div>
 <p id="location"></p>
 <script>
 var address = '{"number":"27197 SW Fake Street","city":"Random City","state":"OH", "zip":43222}'
@@ -29,25 +31,6 @@ document.getElementById("location").innerHTML = "<p style='font-size: 24px; font
 
 <div id="googleMap" style="width:500px;height:380px;"></div>
 
-<div id="logo_main"><%=image_tag("logo.gif")%></div>
 <%= render "adsVertical"%>
-<div class="word_ads">
-sponsored offers</br>
-<div id="ad_title"><a href="www.thisisonlypretend.com/haerhkrdsafdh/46953346/shflesdafdslfhgkd.html">It's Easier</a></div>
-Do Nothing, Lose Weight,</br>
-it's just that simple!</br>
-Imbetterthanyou</br></br>
-
-<div id="ad_title"><a href="www.thisisonlypretend.com/haerhkrdsafdh/46953346/shflesdafdslfhgkd.html">The Only One</a></div>
-I want you to believe that</br> 
-you're the only one that </br>
-will enjoy this exclusive</br>
-product.</br>
-Gullible Daily</br></br>
-
-<div id="ad_title"><a href="www.thisisonlypretend.com/haerhkrdsafdh/46953346/shflesdafdslfhgkd.html">Slash Your Bills</a></div>
-It's so easy a baby could do </br>
-it, check this out!</br>
-Wink Wink Haha</br>
-</div>	
+<%= render "wordAds"%>
 
