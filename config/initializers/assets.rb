@@ -9,3 +9,6 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( hover.js )
 Rails.application.config.assets.precompile += %w( adh.js )
 Rails.application.config.assets.precompile += %w( adv.js )
+Rails.application.config.assets.precompile += %w( jewels.js )
+Rails.application.config.assets.precompile += %w( coffee.js )
+Rails.application.config.assets.precompile += %w( snakes.js )
