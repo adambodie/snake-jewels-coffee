@@ -1,19 +1,21 @@
 <div id="search_form">
+<strong><p style="font-size: 24px">Search:</p></strong>
 <%= search_form_for @q, url: search_products_path, html: { method: :post } do |f| %>
 
-  <%= f.label :title_cont, "Search by Name" %><br />
-  <%= f.search_field :title_cont %><br /><br/ >
+  <%= f.label :title_cont, "By Name" %><br />
+  <%= f.search_field :title_cont, placeholder: "Search..." %><br /><br/ >
   <%= f.submit %><br /><br />
   
   
-  <%= f.label :category_cont, "Search by Category" %><br />
-  <%= f.search_field :category_cont %><br /><br/ >
+  <%= f.label :category_cont, "By Category" %><br />
+  <%= f.search_field :category_cont, placeholder: "Search..." %><br /><br/ >
   <%= f.submit %><br /><br />
-    
-  <%= f.label :price_gteq, "Price in the range of" %>
-  <%= f.search_field :price_gteq %>
-  <%= f.label :price_lteq, "and" %>
-  <%= f.search_field :price_lteq %>
+  
+  <strong><p>By Price</p></strong>  
+  <%= f.label :price_gteq, "Minimum:" %><br />
+  <%= f.search_field :price_gteq, placeholder: "Minimum price..." %><br /><br />
+  <%= f.label :price_lteq, "Maximum" %><br />
+  <%= f.search_field :price_lteq, placeholder: "Maximum price..." %><br /><br />
   <%= f.submit %>
   
 <% end %>

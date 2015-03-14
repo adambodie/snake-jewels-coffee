@@ -33,9 +33,9 @@ body {
 	margin-top: -6px;
 }
 #menu td {
-	font-size: 20px;
+	font-size: 24px;
 	border: 10px groove #CF824E;
-	padding: 10px 31px;
+	padding: 12px 40px;
 	background-image: url(/images/background-archive.jpg);
 	white-space: nowrap;
 }
