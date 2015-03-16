@@ -9,12 +9,14 @@
 #noaccount {
 	font-weight: bold;
 	color: red;
+	font-size: 18px;
 }
 .signup a {
 	text-decoration: none;
-	padding: 20px;
-	font-size: 16px;
-	color: black;
+	padding: 10px;
+	font-size: 15px;
+	color: yellow;
 	font-family: 'Sigmar One';
-	background-color: #CF824E;
+	background-image:url(/images/background.jpg);
+	border: 10px groove #CF824E;
 }
